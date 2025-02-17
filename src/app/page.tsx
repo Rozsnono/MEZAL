@@ -3,6 +3,7 @@ import { counties, countyBorders } from "@/assets/counties";
 import Map from "../components/map";
 import { useEffect, useState } from "react";
 import NumberTest from "@/components/number";
+import Question from "@/components/question";
 
 export default function Home() {
 
@@ -38,7 +39,8 @@ export default function Home() {
   return (
     <div className="w-screen h-screen flex justify-center items-center">
       <Map users={users} baseCounties={baseCounties}></Map>
-      <NumberTest></NumberTest>
+      <Question></Question>
+      {/* <NumberTest></NumberTest> */}
     </div>
   );
 }

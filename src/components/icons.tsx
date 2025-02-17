@@ -1,7 +1,7 @@
-export default function Icon({ name, size = 18 }: { name: string, size?: number }) {
+export default function Icon({ name, size = 18, className }: { name: string, size?: number, className?: string }) {
 
     return (
-        <svg width={size} height={size} fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <svg width={size} height={size} className={className} fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             {getIcon(name)}
         </svg>
     );

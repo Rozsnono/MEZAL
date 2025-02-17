@@ -36,7 +36,7 @@ export default function Map({ capturedCounties = [], baseCounties = [], users }:
 
     return (
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" strokeLinejoin="round" strokeWidth=".5" version="1.2">
-            <g className="layer scale-[150%]">
+            <g className="layer 2xl:scale-[130%] lg:scale-[110%]">
                 <g id="features">
                     {
                         counties.map((county, index) => {

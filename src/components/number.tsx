@@ -12,26 +12,19 @@ export default function NumberTest() {
         <div className="fixed bg-[#00000090] p-4 h-screen w-screen flex flex-col items-center justify-center gap-2 ">
             <div className="p-10 flex flex-col gap-4 border border-zinc-700 rounded-md bg-zinc-800">
 
-                <div className="overflow-visible h-1 w-full bg-zinc-300 flex justify-center items-center">
-                    <div className="relative flex">
-                        <div className="h-4 w-4 bg-green-100 rounded-full flex justify-center">
-                            <div className="absolute -top-5">0</div>
-                        </div>
-
-
-                        <div className="h-4 w-4 bg-yellow-600 rounded-full absolute -left-16 flex justify-center">
-                            <div className="absolute -top-5">-6</div>
-                        </div>
-                        <div className="h-4 w-4 bg-green-600 rounded-full absolute left-6 flex justify-center">
-                            <div className="absolute -top-5">2</div>
-                        </div>
-                        <div className="h-4 w-4 bg-purple-600 rounded-full absolute left-32 flex justify-center">
-                            <div className="absolute -top-5">12</div>
-                        </div>
-                    </div>
+                <div className="pb-6">
+                    <h1 className="text-3xl text-zinc-100">III. Kázmér dupla évszám:</h1>
                 </div>
 
-                <div className="flex flex-col gap-2 border border-zinc-700 rounded-md p-2">
+                <div className="h-32 relative flex justify-center items-center">
+
+                    <div className="h-full w-1 bg-zinc-300 rounded-lg"></div>
+                    <div className="w-full h-1 bg-zinc-300 rounded-lg absolute"></div>
+
+
+                </div>
+
+                <div className="flex flex-col gap-2 border border-zinc-700 rounded-md p-2 hidden">
                     <div className="flex gap-1">
                         <input value={number} type="text" readOnly className="h-16 w-full p-1 px-2 rounded-md text-zinc-900" />
                         <button onClick={() => { setNumber(number.slice(0, number.length - 1)) }} className="col-span-3 h-16 w-16 flex justify-center items-center rounded-md bg-zinc-700 hover:bg-zinc-500 cursor-pointer text-white text-xl ">

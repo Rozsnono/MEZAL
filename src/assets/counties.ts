@@ -1,0 +1,43 @@
+export const counties = [
+    { name: "HUGS", x: 200, y: 200 },
+    { name: "HUKE", x: 330, y: 200 },
+    { name: "HUVE", x: 240, y: 300 },
+    { name: "HUVA", x: 130, y: 280 },
+    { name: "HUZA", x: 140, y: 380 },
+    { name: "HUSO", x: 230, y: 440 },
+    { name: "HUFE", x: 360, y: 300 },
+    { name: "HUTO", x: 360, y: 420 },
+    { name: "HUBA", x: 320, y: 510 },
+    { name: "HUPE", x: 460, y: 230 },
+    { name: "HUBK", x: 470, y: 400 },
+    { name: "HUNO", x: 490, y: 130 },
+    { name: "HUHE", x: 580, y: 160 },
+    { name: "HUJN", x: 620, y: 280 },
+    { name: "HUCS", x: 590, y: 430 },
+    { name: "HUBZ", x: 680, y: 80 },
+    { name: "HUSZ", x: 840, y: 120 },
+    { name: "HUHB", x: 750, y: 230 },
+    { name: "HUBE", x: 690, y: 380 }
+];
+
+export const countyBorders: any = {
+    "HUGS": ["HUKE", "HUVE", "HUVA"],
+    "HUKE": ["HUGS", "HUVE", "HUFE", "HUPE"],
+    "HUVE": ["HUGS", "HUKE", "HUVA", "HUFE", "HUZA", "HUSO"],
+    "HUVA": ["HUGS", "HUVE", "HUZA"],
+    "HUZA": ["HUVA", "HUVE", "HUSO"],
+    "HUSO": ["HUZA", "HUVE", "HUFE", "HUTO", "HUBA"],
+    "HUBA": ["HUSO", "HUTO", "HUBK"],
+    "HUFE": ["HUKE", "HUVE", "HUSO", "HUTO", "HUBK", "HUPE"],
+    "HUTO": ["HUSO", "HUBA", "HUBK", "HUPE"],
+    "HUBK": ["HUBA", "HUTO", "HUFE", "HUPE", "HUCS", "HUJN"],
+    "HUPE": ["HUKE", "HUFE", "HUNO", "HUBK", "HUHE", "HUJN"],
+    "HUNO": ["HUPE", "HUHE", "HUBZ"],
+    "HUHE": ["HUNO", "HUPE", "HUJN", "HUBZ"],
+    "HUJN": ["HUHE", "HUPE", "HUBK", "HUCS", "HUBE", "HUBZ", "HUHB"],
+    "HUCS": ["HUJN", "HUBK", "HUBE"],
+    "HUBZ": ["HUNO", "HUHE", "HUJN", "HUHB", "HUSZ"],
+    "HUSZ": ["HUBZ", "HUHB"],
+    "HUHB": ["HUSZ", "HUBZ", "HUBE", "HUJN"],
+    "HUBE": ["HUCS", "HUJN", "HUHB"]
+};

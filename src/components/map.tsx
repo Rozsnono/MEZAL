@@ -2,7 +2,7 @@
 import { countyBorders } from "@/assets/counties";
 import Icon from "./icons";
 
-export default function Map({ capturedCounties = [], baseCounties = [], users, onSelect }: { capturedCounties?: { capturedBy: string, county: string }[], baseCounties: { basedBy: string, county: string }[], users: { name: string, color: string }[], onSelect: (county: string) => void }) {
+export default function Map({ capturedCounties = [], baseCounties = [], selectedCounties = [], users, onSelect, selectable = true, selectAll = false }: { capturedCounties?: { capturedBy: string, county: string }[], baseCounties: { basedBy: string, county: string }[], selectedCounties: { basedBy: string, county: string }[], users: { name: string, color: string }[], onSelect: (county: string) => void, selectable?: boolean, selectAll?: boolean }) {
 
     function handleClick(e: any) {
         console.log(e.target.id);
@@ -42,16 +42,16 @@ export default function Map({ capturedCounties = [], baseCounties = [], users, o
             if (basedBy) return users.find(user => user.name === basedBy)!.color;
             if (capturedBy) return users.find(user => user.name === capturedBy)!.color;
         }
-        return '#010101'
+        return '#243';
     }
     return (
-        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" strokeLinejoin="round" strokeWidth=".5" version="1.2">
+        <svg className="w-full h-full flex justify-center items-center" xmlns="http://www.w3.org/2000/svg" strokeLinejoin="round" strokeWidth=".5" version="1.2">
             <g className="layer 2xl:scale-[130%] lg:scale-[110%]">
                 <g id="features">
                     {
                         counties.map((county, index) => {
                             return (
-                                <path onClick={() => { onSelect(county.name) }} className={`${!hasCaptured(county.name) ? 'hover:fill-zinc-500 cursor-pointer' : ''}`} key={index} d={county.d} fill={getFillColor(county)} id={county.name} stroke="#ffffff" />
+                                <path onClick={(!hasCaptured(county.name) && selectable) || selectAll ? () => { onSelect(county.name) } : () => { }} className={`${(!hasCaptured(county.name) && selectable) || selectAll ? 'hover:fill-emerald-500 fill-emerald-800 cursor-pointer' : ''}`} key={index} d={county.d} fill={getFillColor(county)} id={county.name} stroke="#ffffff" />
                             )
                         })
                     }
@@ -68,6 +68,18 @@ export default function Map({ capturedCounties = [], baseCounties = [], users, o
                         })
                     }
 
+                </g>
+
+                <g>
+                    {
+                        counties.filter(castle => selectedCounties.find(cap => cap.county === castle.name)).map((castle, index) => {
+                            return (
+                                <foreignObject key={index} x={castle.x} y={castle.y} width="30px" height="30px" name={castle.name}>
+                                    <Icon name="mark" noFill strokeWidth={2} size={30}></Icon>
+                                </foreignObject>
+                            )
+                        })
+                    }
                 </g>
             </g>
 

@@ -2,8 +2,7 @@
 import { countyBorders } from "@/assets/counties";
 import Icon from "./icons";
 
-export default function Map({ capturedCounties = [], baseCounties = [], selectedCounties = [], users, onSelect, selectable = true, selectAll = false, noSpaceLeft }: { capturedCounties?: { capturedBy: string, county: string }[], baseCounties: { basedBy: string, county: string }[], selectedCounties: { basedBy: string, county: string }[], users: { name: string, color: string }[], onSelect: (county: string) => void, selectable?: boolean, selectAll?: boolean, noSpaceLeft?: boolean }) {
-
+export default function MapWar({ capturedCounties = [], baseCounties = [], selectedCounties = [], users, onSelect, selectable = true, selectAll = false }: { capturedCounties?: { capturedBy: string, county: string }[], baseCounties: { basedBy: string, county: string, hp: number }[], selectedCounties: { basedBy: string, county: string }[], users: { name: string, color: string, hover: string }[], onSelect: (county: string) => void, selectable?: boolean, selectAll?: boolean, noSpaceLeft?: boolean }) {
     const counties = [
         { name: "HUGS", x: 200, y: 200, d: "m285.3,192l0.3,2.6l1.2,4.2l0.1,4.4l-0.5,3.5l1,3.5l-0.2,6.1l3.9,3.5l-2.9,8l3.2,4.5l-1.5,3.4l-3,-1.1l-1.2,1.3l1.5,5.5l-2.1,5.7l0,4l-4.1,-4.5l-4.7,-3.1l-0.1,3.8l-2.5,-1.1l-2.5,-0.4l-2.3,2.2l-4.8,-2.3l-6.1,2.1l-5.7,4.4l-5.4,-2.4l-3.8,2.4l-6.9,-1l-2.7,4.1l-3.1,1l-2.9,0l-2,1.8l-2.4,-0.1l-2.2,-0.8l-4.5,-3.3l-5,0.4l-5,1.6l-2.4,-0.5l-1.2,2.1l-3.7,2.9l-5.2,1.9l-3.1,-5.1l-3.5,-2.6l-12.7,6.8l1.1,-5.1l1.4,-4.1l-3.3,-0.9l-14.4,8.3l-10.9,-1.9l-3.3,-2.7l-10.1,6.3l-3.8,0.8l-3.7,-3.7l-6.9,-1.6l-1.9,-1.4l-1.6,-2.1l-0.3,-0.3l1.8,-1.5l-0.5,-8l1.5,-1.6l3.9,-1.7l1.5,-2.5l0.1,-3.1l-1,-2.5l-1.9,-1.9l-2.3,-1.2l0.8,-3.9l-1.1,-4l-2.4,-3.2l-2.9,-1.3l-1.1,0.2l-1.1,0.2l-1.1,0.2l-1.1,0.2l-0.6,-0.25l-0.6,-0.25l-7.9,-3.35l-3.8,0.75l-9.3,-4.26l3.85,-5.61l1.2,1.64l1.2,0.14l2.29,-1.74l5.54,-3.04l1.29,-1.34l0.89,-1.69l-0.45,-2.39l0.5,-1.94l4.8,-2.29l5.8,0.96l10.15,3.75l2,1.4l2.05,5.1l0.3,0.7l1.5,1.5l1.5,0.9l7.5,1.2l1.2,-0.3l1.5,-1.4l2.6,-4.2l1.8,-1.5l1.9,5.2l5.1,0.9l10.6,-2.7l9.8,-1.3l2.8,-1.3l-1.6,-0.9l-1.1,-1.5l-0.7,-2l-0.2,-6.6l-0.9,-4l-0.2,-3.4l2,-2.3l-0.9,-1.2l-1.2,-3.8l-1.1,-0.8l-2.8,-1.3l-0.8,-0.9l-0.1,-2.1l1.7,-0.9l4.6,-1.1l2.2,-1.7l1.4,-2l0.7,-2.6l0.6,-3.6l-0.3,-0.4l-0.7,-0.2l-0.7,-0.4l-0.1,-0.9l0.4,-0.6l1.2,-0.8l0.3,-0.4l0.3,-1.7l0.7,-1.2l0.1,-1.3l-1.5,-1.6l8.4,-7.1l4.9,-2.9l4.9,1l5.5,1.6l1.4,0.3l8.7,1.4l4.3,3.5l13.7,18.5l1.3,1.2l1.4,0.6l3.4,0.7l1.2,0.8l4.6,6.8l1.6,1.7l1.4,-0.1l1.3,-0.6l1.5,-0.2l2,1l2.8,2l2.5,2.3l1.1,2.1l1.4,1.6l5.7,3l3,1.7l11.2,3.1l7.8,-0.5z" },
         { name: "HUKE", x: 330, y: 200, d: "m285.1,251.1l0,-4l2.1,-5.7l-1.5,-5.5l1.2,-1.3l3,1.1l1.5,-3.4l-3.2,-4.5l2.9,-8l-3.9,-3.5l0.2,-6.1l-1,-3.5l0.5,-3.5l-0.1,-4.4l-1.2,-4.2l-0.3,-2.6l30.7,-2l16.5,1.7l5,-0.5l10,-4.1l27.4,-3.2l6,0.5l4.9,2.1l4,0.8l3.9,-0.4l3.3,-2l4.4,-5.1l2.4,-1.8l3,-0.8l3.3,-1.1l0.3,0l4.1,3l4.8,1l3,4.7l1.3,3.4l0.8,6l1.7,1.8l-2.4,2.1l-3,-1l-5.5,1.9l1.4,10.2l-7,-0.8l-7,1l1.3,2.5l0.8,2.9l-3.6,2.7l-2.9,3.8l-2.1,5.3l-3.4,3.3l-22.7,1.3l-2.4,1.15l-1.8,2.3l-3,6.45l-2.1,2.2l-2.6,1.1l-3.8,3.9l-6.7,3.4l-2,2.9l1.7,1.8l1.3,2.4l-7.1,1.9l-2.4,-1.6l-1.8,-2.9l-7.8,-6.8l-2.8,-0.1l-2.3,3.7l-3.2,0.9l-3.1,0.1l-1.4,4.7l0.4,5.8l-1.5,2.4l-0.9,3.2l-15.3,3.3l-3,-0.7l-1.5,-3.6l-0.8,-4.1l-4.3,-0.7l-5.1,-2.1l0.8,-5.4l-0.4,-5.7z" },
@@ -25,36 +24,40 @@ export default function Map({ capturedCounties = [], baseCounties = [], selected
         { name: "HUHB", x: 750, y: 230, d: "m718.2,150.4l9.7,1.3l11.1,8.9l6,-2.4l21.7,-1.7l5.2,-3.1l4.2,1.5l1.4,4.2l-1.7,10.7l-0.6,11.2l12.6,9.9l2.2,3.1l6.6,1.4l2.6,2.5l5.6,2.1l2.9,0l2.7,1.1l2.4,3l2.8,1.7l2.5,-2.5l1.6,-4.2l3.3,-5.6l4.5,-0.3l9.4,5.3l3.8,6.9l-0.7,5.2l3.5,3.5l6.2,-7l2.3,3.5l2.7,11.5l2.8,3.7l0.1,0.1l-0.8,0.5l-6.5,1.7l-8.3,6.3l-4,4.3l-2.6,4.9l0.4,6.1l1.2,6.9l0.1,6.6l-2.6,5.5l-6,1.8l-2.4,1.5l-2.5,2.7l-5.1,7.6l-0.9,2.3l-1.5,7.1l-0.7,1.8l-1.5,2.9l-0.6,2.2l0,2.3l0.3,1.7l0,1.9l-0.8,2.4l-1.1,1.6l-3,2.8l-1.3,1.9l-0.6,1.8l-0.6,3.5l-0.9,1.7l-2.7,2.7l-6.6,4.4l-3,2.8l-5.3,6.3l0.2,0.7l-3.3,0.8l-5.7,2.8l-9.2,9.3l-5.6,-0.1l-9.3,2.6l-4.5,-0.9l-2.5,-2.5l1.2,-4.8l-2.5,-2.5l-3.2,-0.9l-1.7,-3.1l0.3,-5.6l0.1,-14.2l-2.7,-5.7l-8.8,-4.3l-6,-0.7l-5.7,-2l-16.6,-10.9l3.8,-9.9l0.7,-12.5l-1.3,-9.4l-2.2,-9.3l-1.6,-16.8l-1.8,-8l-4.2,-4l-4.3,-0.5l-4.3,-2l-5.2,-5.4l-3.1,-10.1l9.8,-0.9l6.7,-6.9l0.8,-1.9l0.9,-1.1l3.2,-6.3l0,-1.5l7.4,-1.4l0,-1.2l-0.8,-6.1l2.8,-3l0.8,-1.5l0.4,-3.2l0,-3.7l-0.3,-1.9l0.1,-1.5l1.2,-2.6l4.4,-5.2l1.1,-1.7l0.7,-2.8l0.3,-1.7z" },
         { name: "HUBE", x: 690, y: 380, d: "m674.4,484.7l0,-0.1l-1.6,-2.4l-2.5,-1.9l-1,-3l1.1,-4.8l0.2,-4.6l-1.5,-3.7l-2.3,-2.9l-2.6,0.3l-1.2,-2.3l-7.1,1.9l-6.7,-0.1l2.4,-5.3l-4.3,1.1l0.1,-8.1l1.3,-2.5l-0.8,-3.9l2.9,-5l1.8,-6.3l-4,-1.7l-2.1,-3.9l-0.4,-14.6l1.8,-9.2l-0.4,-12.5l-4.3,-4l-6.7,-1.8l-10.9,-3.9l-2,-6.5l1.4,-5.7l5.3,-4.6l4.7,-0.5l4.5,1.2l3.8,-5.4l3.9,1.1l3.1,-2.7l2.1,1.4l1.6,2.3l2.7,-0.6l2.5,-1.8l2.2,-0.4l2.1,-1.4l1.4,-5.9l-0.7,-6.4l-1.3,-2.5l-0.1,-3l5.1,-6.2l-0.1,-2.6l-0.5,-1.2l1.4,-2.5l2.2,-1.6l8.1,-10l2.6,-1l2.7,0.8l1.9,-1.1l1.2,-2.6l1.9,-0.6l1.5,-2.5l1.1,-2.6l3.2,-1.3l1.5,-2l1,-2.7l2,-2.7l2.6,-1.3l16.6,10.9l5.7,2l6,0.7l8.8,4.3l2.7,5.7l-0.1,14.2l-0.3,5.6l1.7,3.1l3.2,0.9l2.5,2.5l-1.2,4.8l2.5,2.5l4.5,0.9l9.3,-2.6l5.6,0.1l9.2,-9.3l5.7,-2.8l3.3,-0.8l0.3,1l1.2,0.6l1.3,0.2l0.9,0.8l1.2,2.3l0.1,0.2l-0.5,0.2l-2.6,9.7l-1.1,1.4l-6.1,5.1l-0.6,0.2l-0.2,0.5l-0.2,2.3l0.1,2.4l0.5,2.1l0,2.1l-1.1,2.5l-1.4,1.2l-4.9,1.4l-2.8,2.6l-1.7,3.2l-2.8,7.9l-0.6,0.9l-0.5,1l-0.3,1.2l-0.1,1.2l0.3,0.5l0.3,0.5l0.4,0.4l3.6,2.4l-0.4,3.9l-2.5,3.6l-2.7,1.6l-3.6,0.6l-1.5,2.3l-0.2,0.7l-0.9,2.6l-2.8,3.7l-2.9,1.5l-4.9,-0.4l-2.9,0.8l-2,2.4l-0.8,3.7l-0.5,7.5l-1.7,3.6l-2.3,2.9l-1.9,3.1l-0.3,4l3.9,7.5l0.8,4.3l-3.1,2.3l-5.6,0.3l-2.7,0.9l-2.2,2.7l-1.4,4.2l-0.5,8.6l-1.2,3.8l-1.5,2.9l-1.3,1l-3.9,0l-0.9,0.4l-6.4,7.8l-2.4,1l-2.6,-2.3l-0.9,-1.1l-1.1,-0.6l-1.1,0l-1.3,0.6l-2.6,0.1l-5,-2.2l-2.4,-0.5l-0.9,0.3l-2,1.1l-1.3,0.1l-1.1,-0.5l-2.4,-2.1l-1.3,-0.6l-2.6,-0.2l-2.9,0.8l-1.5,0.9z" }
     ];
-    function hasCaptured(county: string) {
-        const capturedBy = capturedCounties.find(c => c.county === county)?.capturedBy;
-        const basedBy = baseCounties.find(c => c.county === county)?.basedBy;
 
-        if (basedBy || capturedBy) return { capturedBy, basedBy };
-
-        if (countyBorders[county].some((border: string) =>
-            baseCounties.find(b => b.county === border && b.basedBy === users[0].name) ||
-            capturedCounties.find(cc => cc.county === border && cc.capturedBy === users[0].name)
-        )) return false;
-
-        const allBordersCapturedByUser0 = capturedCounties.concat(baseCounties.map(b => ({ ...b, capturedBy: b.basedBy })))
-            .filter(cc => cc.capturedBy === users[0].name)
-            .every(cc => countyBorders[cc.county].every((border: any) =>
-                capturedCounties.find(c => c.county === border) || baseCounties.find(b => b.county === border)
-            ));
-
-        if (allBordersCapturedByUser0) return null;
-
-        return true;
+    function canAttack(county: string): boolean {
+        if (selectAll) {
+            if (capturedCounties.find(c => c.county === county && c.capturedBy == users[0].name) || baseCounties.find(c => c.county === county && c.basedBy == users[0].name)) return false;
+        }
+        return !(countyBorders[county].find((c:any) => capturedCounties.find(cc => cc.county === c && cc.capturedBy === users[0].name) || baseCounties.find(cc => cc.county === c && cc.basedBy === users[0].name)) && !capturedCounties.find(c => c.county === county && c.capturedBy === users[0].name) && !baseCounties.find(c => c.county === county && c.basedBy === users[0].name));
     }
 
     function getFillColor(county: any) {
-        if (hasCaptured(county.name)) {
-            const { capturedBy, basedBy } = { capturedBy: capturedCounties.find(c => c.county === county.name)?.capturedBy, basedBy: baseCounties.find(c => c.county === county.name)?.basedBy }
-            if (basedBy) return users.find(user => user.name === basedBy)!.color;
-            if (capturedBy) return users.find(user => user.name === capturedBy)!.color;
-        }
-        return '#fff';
+        return users.find(u => u.name === capturedCounties.find(c => c.county === county.name)?.capturedBy)?.color || users.find(u => u.name === baseCounties.find(c => c.county === county.name)?.basedBy)?.color || 'fill-[#ffffff]';
     }
+
+    function getHoverColor(county: any) {
+        if (!canAttack(county.name)) {
+            return users.find(u => u.name === capturedCounties.find(c => c.county === county.name)?.capturedBy)?.hover || users.find(u => u.name === baseCounties.find(c => c.county === county.name)?.basedBy)?.hover || 'hover:fill-[#ffffff]';
+        }
+    }
+
+    function getBaseIcon(county: any) {
+        if (baseCounties.find(c => c.county === county.name)) {
+            switch (baseCounties.find(c => c.county === county.name)?.hp) {
+                case 1:
+                    return "castle-1";
+                case 2:
+                    return "castle-2";
+                case 3:
+                    return "castle-3";
+                default:
+                    return "castle";
+            }
+        }
+
+    }
+
     return (
         <svg className="w-full h-full flex justify-center items-center" xmlns="http://www.w3.org/2000/svg" strokeLinejoin="round" strokeWidth=".5" version="1.2">
             <g className="layer 2xl:scale-[130%] lg:scale-[110%] sm:scale-[90%] scale-[80%]">
@@ -62,7 +65,7 @@ export default function Map({ capturedCounties = [], baseCounties = [], selected
                     {
                         counties.map((county, index) => {
                             return (
-                                <path onClick={(!hasCaptured(county.name) && selectable) || selectAll ? () => { onSelect(county.name) } : () => { }} className={`${getFillColor(county)} ${(!hasCaptured(county.name) && selectable) || selectAll ? 'hover:fill-emerald-500 fill-emerald-800 cursor-pointer ' : ''} `} key={index} d={county.d} id={county.name} fill="#132" stroke="#ffffff" />
+                                <path onClick={(!canAttack(county.name) && selectable) ? () => { onSelect(county.name) } : () => { }} className={`${(!canAttack(county.name) && selectable) ? 'cursor-pointer' : ''} ${getFillColor(county)} ${getHoverColor(county)}`} key={index} d={county.d} id={county.name} stroke="#ffffff" />
                             )
                         })
                     }
@@ -73,7 +76,7 @@ export default function Map({ capturedCounties = [], baseCounties = [], selected
                         counties.filter(castle => baseCounties.find(cap => cap.county === castle.name)).map((castle, index) => {
                             return (
                                 <foreignObject key={index} x={castle.x} y={castle.y} width="30px" height="30px" name={castle.name}>
-                                    <Icon name="castle" size={30}></Icon>
+                                    <Icon name={getBaseIcon(castle) as string} size={30}></Icon>
                                 </foreignObject>
                             )
                         })
@@ -85,8 +88,8 @@ export default function Map({ capturedCounties = [], baseCounties = [], selected
                     {
                         counties.filter(castle => selectedCounties.find(cap => cap.county === castle.name)).map((castle, index) => {
                             return (
-                                <foreignObject key={index} x={castle.x} y={castle.y} width="30px" height="30px" name={castle.name}>
-                                    <Icon name="mark" noFill strokeWidth={2} size={30}></Icon>
+                                <foreignObject key={index} x={castle.x - 6} y={castle.y - 4} width="64px" height="64px" name={castle.name}>
+                                    <Icon name="shield" noFill strokeWidth={2} size={42}></Icon>
                                 </foreignObject>
                             )
                         })

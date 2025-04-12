@@ -1,113 +1,63 @@
 "use client";
-import { counties, countyBorders } from "@/assets/counties";
-import Map from "../components/map";
-import { useEffect, useState } from "react";
-import NumberTest from "@/components/number";
-import Question from "@/components/question";
-import { Bot } from "@/services/bot.service";
+
+import { clearMapFromLocal, MapContext, setUserToLocal } from "@/services/captured.context";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useContext, useState } from "react";
+import Image from "next/image";
 
 
 export default function Home() {
+  const route = useRouter();
 
-
-  const users = [
-    { name: "User1", color: "#18c032" },
-    { name: "Bot1", color: "#8c2fba" },
-    { name: "Bot2", color: "#f4c542" },
-  ]
-
-  const [question, setQuestion] = useState<any>(null);
-
-  const [baseCounties, setBaseCounties] = useState([]);
-  const [capturedCounties, setCapturedCounties] = useState<any>([]);
-
-  const [currentQuestion, setCurrentQuestion] = useState<number>(0);
-  const [bot1, setBot1] = useState<any>();
-  const [bot2, setBot2] = useState<any>();
-  async function fetchQuestions() {
-    const res = await fetch("/assets/questions.json");
-    const resJson = await res.json();
-    setQuestion(resJson);
-  };
-
-  useEffect(() => {
-
-    setBaseCounties(getBaseCountiesRandomly());
-    fetchQuestions();
-  }, []);
-
-  function getBaseCountiesRandomly(): any {
-    const tmpBaseCounties: any = [];
-
-    users.forEach((user: any, i: number) => {
-      let randomCounty = counties[Math.floor(Math.random() * counties.length)];
-      do {
-        randomCounty = counties[Math.floor(Math.random() * counties.length)];
-      } while (tmpBaseCounties.some((baseCounty: any) => baseCounty.county === randomCounty.name) || tmpBaseCounties.find((c: any) => countyBorders[c.county].includes(randomCounty.name)));
-      tmpBaseCounties.push({ basedBy: user.name, county: randomCounty.name });
-      switch (i) {
-        case 1: setBot1(new Bot(user.name, randomCounty.name)); break;
-        case 2: setBot2(new Bot(user.name, randomCounty.name)); break;
-        default: break;
-      }
-    });
-
-    console.log(tmpBaseCounties);
-
-    return tmpBaseCounties;
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    route.replace("/mobile");
   }
 
-  function BotPlays() {
-    const answer1 = bot1.chooseAnswer(question[currentQuestion].options);
-    const answer2 = bot2.chooseAnswer(question[currentQuestion].options);
-
-    const cap1 = bot1.chooseToCapture();
-    const cap2 = bot2.chooseToCapture();
-
-    console.log(answer1, cap1, answer2, cap2);
-    captureCounty(cap1, bot1.id);
-    captureCounty(cap2, bot2.id);
-  }
-
-
-
-  function captureCounty(county: string, user: string) {
-    const tmp = capturedCounties;
-    tmp.push({ county: county, capturedBy: user });
-    console.log(tmp);
-    setCapturedCounties(tmp);
-  }
-
-  const [showQuestion, setShowQuestion] = useState(false);
-  const [selectedCounty, setSelectedCounty] = useState("");
-
-  function onCountySelection(county: string) {
-    console.log(county);
-    setShowQuestion(true);
-    setSelectedCounty(county);
-  }
-
-  function onQuestionAnswered(answer: boolean) {
-    if (answer) {
-      console.log("Correct answer", selectedCounty);
-      BotPlays();
-      captureCounty(selectedCounty, users[0].name);
-    }
-    setShowQuestion(false);
-  }
-
-  if (!question) {
-    return null;
-  }
-
+  const { setMap, user, setUser } = useContext(MapContext);
+  const [loading, setLoading] = useState<boolean>(false);
   return (
-    <div className="w-screen h-screen flex justify-center items-center">
-      <Map onSelect={onCountySelection} users={users} baseCounties={baseCounties} capturedCounties={capturedCounties}></Map>
-      {
-        showQuestion &&
-        <Question onClose={onQuestionAnswered} question={question[currentQuestion].question} answer_id={question[currentQuestion].answer_id} options={question[currentQuestion].options}></Question>
-      }
-      {/* <NumberTest></NumberTest> */}
-    </div>
-  );
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 ">
+      <div className="flex flex-col gap-4 items-center justify-center bg-zinc-800 border border-gray-500 p-6 rounded-lg shadow-md">
+        <Image src={"/assets/logo.png"} width={160} height={160} alt="Logo"></Image>
+        <h1 className="text-4xl font-bold">Vetésforgó</h1>
+        <p className="text-gray-400 mt-2">Ahol a tudás terem – hódítsd meg a földet kérdésről kérdésre!</p>
+        <input
+          type="text"
+          value={user || ""}
+          onChange={(e) => { setUser(e.target.value); }}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              clearMapFromLocal();
+              setUserToLocal(user);
+              route.replace("/game");
+              setMap(null);
+            }
+          }}
+          placeholder="Add meg a neved"
+          className="mt-4 p-3 border bg-zinc-700 border-gray-300 rounded-md w-full"
+        />
+        <div className="flex flex-col gap-4 mt-6 w-full">
+          <button disabled={loading} onClick={user == "" ? () => { } : () => { setLoading(true); clearMapFromLocal(); route.replace("/game"); setMap(null); setUserToLocal(user); }} className="flex w-full items-center justify-center gap-2 bg-emerald-500 text-white px-6 py-3 rounded-md hover:bg-emerald-600 text-lg">
+            <span>🎮</span> Játék
+          </button>
+          <button disabled className="flex items-center justify-center gap-2 bg-blue-800 text-gray-200 px-6 py-3 rounded-md text-lg cursor-not-allowed">
+            <span>⚙️</span> Beállítások
+          </button>
+          <button
+            className="flex items-center justify-center gap-2 bg-red-900 text-gray-300 px-6 py-3 rounded-md cursor-not-allowed text-lg"
+            disabled
+          >
+            <span>❓</span> Segítség
+          </button>
+          <p className="text-sm text-gray-400 mt-4 text-center">
+            Felhívjuk figyelmedet, hogy a játék során előfordulhatnak technikai problémák. <br />Elnézést kérünk az esetleges kellemetlenségekért, és köszönjük a megértésedet!
+          </p>
+        </div>
+        <p className="text-sm text-gray-400 mt-6">
+          &copy; 2025 Vetésforgó. Minden jog fenntartva.
+        </p>
+      </div>
+    </main>
+  )
 }

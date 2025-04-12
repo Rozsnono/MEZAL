@@ -1,6 +1,6 @@
 export default function Icon({ name, size = 18, className, noFill = false, strokeWidth }: { name: string, size?: number, className?: string, noFill?: boolean, strokeWidth?: number }) {
 
-    if(noFill) {
+    if (noFill) {
         return (
             <svg width={size} height={size} className={className} stroke="currentColor" strokeWidth={strokeWidth} fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 {getIcon(name)}
@@ -374,6 +374,43 @@ function getIcon(name: string) {
                         <path d="M22 22v-9h-2V8.5h-3V13h-3v-2.5l-2-2-2 2V13H7V8.5H4V13H2v9h7v-2a3 3 0 0 1 6 0v2h7Z"></path>
                         <path d="M7.5 5.5h-4v3h4v-3Z"></path>
                         <path d="M20.5 5.5h-4v3h4v-3Z"></path>
+                        <path d="M12 15v2"></path>
+                        <path d="M10 17h4"></path>
+                    </>
+                )
+            }
+        case "castle-1":
+            {
+                return (
+                    <>
+                        <path d="M22 2V13H.5H4V13H2v9h7v-2a3 3 0 0 1 6 0v2h7Z"></path>
+                    </>
+                )
+            }
+        case "castle-2":
+            {
+                return (
+                    <>
+                        <path d="M15 5.5 18.5 2 22 5.5h-7Z"></path>
+                        <path d="M22 22v-9h-2V8.5h-3V13h-3v-2.5l-2-2-2 2V13H.5H4V13H2v9h7v-2a3 3 0 0 1 6 0v2h7Z"></path>
+                        <path d="M20.5 5.5h-4v3h4v-3Z"></path>
+                        <path d="M12 15v2"></path>
+                        <path d="M10 17h4"></path>
+                    </>
+                )
+            }
+
+        case "castle-3":
+            {
+                return (
+                    <>
+                        <path d="M2 5.5 5.5 2 9 5.5H2Z"></path>
+                        <path d="M15 5.5 18.5 2 22 5.5h-7Z"></path>
+                        <path d="M22 22v-9h-2V8.5h-3V13h-3v-2.5l-2-2-2 2V13H7V8.5H4V13H2v9h7v-2a3 3 0 0 1 6 0v2h7Z"></path>
+                        <path d="M7.5 5.5h-4v3h4v-3Z"></path>
+                        <path d="M20.5 5.5h-4v3h4v-3Z"></path>
+                        <path d="M12 15v2"></path>
+                        <path d="M10 17h4"></path>
                     </>
                 )
             }
@@ -381,8 +418,7 @@ function getIcon(name: string) {
             {
                 return (
                     <>
-                        <path fillRule="evenodd" d="M12 2c1.1 0 2 .9 2 2v4.5c0 1.1-.9 2-2 2s-2-.9-2-2V4c0-1.1.9-2 2-2Zm0 11c1.1 0 2 .9 2 2v4.5c0 1.1-.9 2-2 2s-2-.9-2-2V15c0-1.1.9-2 2-2Zm8.5-8h3v3h-3V5ZM5.5 5h3v3h-3V5ZM5.5 20h3v3h-3v-3ZM20.5 20h3v3h-3v-3Z" clipRule="evenodd"></path>
-                        <path d="M12 2c1.1 0 2 .9 2 2v4.5c0 1.1-.9 2-2 2s-2-.9-2-2V4c0-1.1.9-2 2-2Zm0 11c1.1 0 2 .9 2 2v4.5c0 1.1-.9 2-2 2s-2-.9-2-2V15c0-1.1.9-2 2-2Z"></path>
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                     </>
                 )
             }
@@ -396,6 +432,7 @@ function getIcon(name: string) {
                     </>
                 )
             }
+
     }
 }
 

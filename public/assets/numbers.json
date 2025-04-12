@@ -1,0 +1,402 @@
+[
+    {
+        "question": "Hány fő csoportra osztjuk a takarmányokat a nedvességtartalom alapján?",
+        "answer": 2
+    },
+    {
+        "question": "A széna optimális szárazanyag-tartalma hány százalék?",
+        "answer": 85
+    },
+    {
+        "question": "A szilázs optimális szárazanyag-tartalma hány százalék?",
+        "answer": 35
+    },
+    {
+        "question": "Hány fő tápanyagcsoportot említ az anyag?",
+        "answer": 6
+    },
+    {
+        "question": "A takarmányok hány százalékát tehetik ki a szénhidrátok?",
+        "answer": 60
+    },
+    {
+        "question": "Hány típusú abraktakarmány szerepel a dokumentumban?",
+        "answer": 3
+    },
+    {
+        "question": "Legalább hány ipari mellékterméket említ a dokumentum?",
+        "answer": 4
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "A szenázs készítésekor az optimális szárazanyag-tartalom hány százalék?",
+        "answer": 45
+    },
+    {
+        "question": "A növényi eredetű takarmányokat hány csoportra lehet bontani?",
+        "answer": 2
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "A széna optimális szárazanyag-tartalma hány százalék?",
+        "answer": 85
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "A széna optimális szárazanyag-tartalma hány százalék?",
+        "answer": 85
+    },
+    {
+        "question": "A takarmányok hány százalékát tehetik ki a szénhidrátok?",
+        "answer": 60
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "A széna optimális szárazanyag-tartalma hány százalék?",
+        "answer": 85
+    },
+    {
+        "question": "A növényi eredetű takarmányokat hány csoportra lehet bontani?",
+        "answer": 2
+    },
+    {
+        "question": "Hány típusú abraktakarmány szerepel a dokumentumban?",
+        "answer": 3
+    },
+    {
+        "question": "A széna optimális szárazanyag-tartalma hány százalék?",
+        "answer": 85
+    },
+    {
+        "question": "Hány fő csoportra osztjuk a takarmányokat a nedvességtartalom alapján?",
+        "answer": 2
+    },
+    {
+        "question": "A szenázs készítésekor az optimális szárazanyag-tartalom hány százalék?",
+        "answer": 45
+    },
+    {
+        "question": "Hány fő tápanyagcsoportot említ az anyag?",
+        "answer": 6
+    },
+    {
+        "question": "A takarmányok hány százalékát tehetik ki a szénhidrátok?",
+        "answer": 60
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "Hány fő tápanyagcsoportot említ az anyag?",
+        "answer": 6
+    },
+    {
+        "question": "Hány típusú abraktakarmány szerepel a dokumentumban?",
+        "answer": 3
+    },
+    {
+        "question": "A takarmányok hány százalékát tehetik ki a szénhidrátok?",
+        "answer": 60
+    },
+    {
+        "question": "Hány típusú abraktakarmány szerepel a dokumentumban?",
+        "answer": 3
+    },
+    {
+        "question": "Hány fő tápanyagcsoportot említ az anyag?",
+        "answer": 6
+    },
+    {
+        "question": "A széna optimális szárazanyag-tartalma hány százalék?",
+        "answer": 85
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "A széna optimális szárazanyag-tartalma hány százalék?",
+        "answer": 85
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "A növényi eredetű takarmányokat hány csoportra lehet bontani?",
+        "answer": 2
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "A növényi eredetű takarmányokat hány csoportra lehet bontani?",
+        "answer": 2
+    },
+    {
+        "question": "Hány típusú abraktakarmány szerepel a dokumentumban?",
+        "answer": 3
+    },
+    {
+        "question": "A széna optimális szárazanyag-tartalma hány százalék?",
+        "answer": 85
+    },
+    {
+        "question": "A takarmányok hány százalékát tehetik ki a szénhidrátok?",
+        "answer": 60
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "A széna optimális szárazanyag-tartalma hány százalék?",
+        "answer": 85
+    },
+    {
+        "question": "A takarmányok hány százalékát tehetik ki a szénhidrátok?",
+        "answer": 60
+    },
+    {
+        "question": "A takarmányok hány százalékát tehetik ki a szénhidrátok?",
+        "answer": 60
+    },
+    {
+        "question": "A növényi eredetű takarmányokat hány csoportra lehet bontani?",
+        "answer": 2
+    },
+    {
+        "question": "A takarmányok hány százalékát tehetik ki a szénhidrátok?",
+        "answer": 60
+    },
+    {
+        "question": "A széna optimális szárazanyag-tartalma hány százalék?",
+        "answer": 85
+    },
+    {
+        "question": "A takarmányok hány százalékát tehetik ki a szénhidrátok?",
+        "answer": 60
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "A takarmányok hány százalékát tehetik ki a szénhidrátok?",
+        "answer": 60
+    },
+    {
+        "question": "A takarmányok hány százalékát tehetik ki a szénhidrátok?",
+        "answer": 60
+    },
+    {
+        "question": "Hány típusú abraktakarmány szerepel a dokumentumban?",
+        "answer": 3
+    },
+    {
+        "question": "Hány típusú abraktakarmány szerepel a dokumentumban?",
+        "answer": 3
+    },
+    {
+        "question": "A takarmányok hány százalékát tehetik ki a szénhidrátok?",
+        "answer": 60
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "A széna optimális szárazanyag-tartalma hány százalék?",
+        "answer": 85
+    },
+    {
+        "question": "Hány típusú abraktakarmány szerepel a dokumentumban?",
+        "answer": 3
+    },
+    {
+        "question": "Hány fő tápanyagcsoportot említ az anyag?",
+        "answer": 6
+    },
+    {
+        "question": "Hány fő tápanyagcsoportot említ az anyag?",
+        "answer": 6
+    },
+    {
+        "question": "Hány fő tápanyagcsoportot említ az anyag?",
+        "answer": 6
+    },
+    {
+        "question": "A takarmányok hány százalékát tehetik ki a szénhidrátok?",
+        "answer": 60
+    },
+    {
+        "question": "A széna optimális szárazanyag-tartalma hány százalék?",
+        "answer": 85
+    },
+    {
+        "question": "A széna optimális szárazanyag-tartalma hány százalék?",
+        "answer": 85
+    },
+    {
+        "question": "A széna optimális szárazanyag-tartalma hány százalék?",
+        "answer": 85
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "A takarmányok hány százalékát tehetik ki a szénhidrátok?",
+        "answer": 60
+    },
+    {
+        "question": "Hány típusú abraktakarmány szerepel a dokumentumban?",
+        "answer": 3
+    },
+    {
+        "question": "A szenázs készítésekor az optimális szárazanyag-tartalom hány százalék?",
+        "answer": 45
+    },
+    {
+        "question": "A széna optimális szárazanyag-tartalma hány százalék?",
+        "answer": 85
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "Hány fő tápanyagcsoportot említ az anyag?",
+        "answer": 6
+    },
+    {
+        "question": "Legalább hány ipari mellékterméket említ a dokumentum?",
+        "answer": 4
+    },
+    {
+        "question": "A takarmányok hány százalékát tehetik ki a szénhidrátok?",
+        "answer": 60
+    },
+    {
+        "question": "A takarmányok hány százalékát tehetik ki a szénhidrátok?",
+        "answer": 60
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "A széna optimális szárazanyag-tartalma hány százalék?",
+        "answer": 85
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "A széna optimális szárazanyag-tartalma hány százalék?",
+        "answer": 85
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "A széna optimális szárazanyag-tartalma hány százalék?",
+        "answer": 85
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "Hány típusú abraktakarmány szerepel a dokumentumban?",
+        "answer": 3
+    },
+    {
+        "question": "A takarmányok hány százalékát tehetik ki a szénhidrátok?",
+        "answer": 60
+    },
+    {
+        "question": "Hány típusú abraktakarmány szerepel a dokumentumban?",
+        "answer": 3
+    },
+    {
+        "question": "A takarmányok hány százalékát tehetik ki a szénhidrátok?",
+        "answer": 60
+    },
+    {
+        "question": "A szilázs optimális szárazanyag-tartalma hány százalék?",
+        "answer": 35
+    },
+    {
+        "question": "A takarmányok hány százalékát tehetik ki a szénhidrátok?",
+        "answer": 60
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "Hány fő tápanyagcsoportot említ az anyag?",
+        "answer": 6
+    },
+    {
+        "question": "A széna optimális szárazanyag-tartalma hány százalék?",
+        "answer": 85
+    },
+    {
+        "question": "A takarmányok hány százalékát tehetik ki a szénhidrátok?",
+        "answer": 60
+    },
+    {
+        "question": "A takarmányok hány százalékát tehetik ki a szénhidrátok?",
+        "answer": 60
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "Hány típusú abraktakarmány szerepel a dokumentumban?",
+        "answer": 3
+    },
+    {
+        "question": "Hány típusú abraktakarmány szerepel a dokumentumban?",
+        "answer": 3
+    },
+    {
+        "question": "Hányféle tömegtakarmány típust sorolunk fel?",
+        "answer": 5
+    },
+    {
+        "question": "A széna optimális szárazanyag-tartalma hány százalék?",
+        "answer": 85
+    }
+]

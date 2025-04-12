@@ -29,7 +29,7 @@ export const countyBorders: any = {
     "HUSO": ["HUZA", "HUVE", "HUFE", "HUTO", "HUBA"],
     "HUBA": ["HUSO", "HUTO", "HUBK"],
     "HUFE": ["HUKE", "HUVE", "HUSO", "HUTO", "HUBK", "HUPE"],
-    "HUTO": ["HUSO", "HUBA", "HUBK", "HUPE"],
+    "HUTO": ["HUSO", "HUBA", "HUBK", "HUFE"],
     "HUBK": ["HUBA", "HUTO", "HUFE", "HUPE", "HUCS", "HUJN"],
     "HUPE": ["HUKE", "HUFE", "HUNO", "HUBK", "HUHE", "HUJN"],
     "HUNO": ["HUPE", "HUHE", "HUBZ"],

@@ -6,7 +6,7 @@ export class Bot {
 
     id: string;
 
-    constructor(id: string, base: any, captureds?: any[] = []) {
+    constructor(id: string, base: any, captureds: any[] = []) {
         this.id = id;
         this.captureds = captureds;
         if(base.length > 0) {

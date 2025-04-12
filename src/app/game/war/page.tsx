@@ -194,7 +194,7 @@ export default function War() {
         }
     }
 
-    async function onQuestionAnswered(position: any, rounds?: number = round) {
+    async function onQuestionAnswered(position: any, rounds: number = round) {
         setShowQuestion(false);
         setShowNumberQ(false);
         setLoading(true);

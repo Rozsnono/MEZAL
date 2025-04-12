@@ -1,7 +1,6 @@
 [
     {
         "question": "Mi a hektár mértékegység jele?",
-        "answer_id": 1,
         "options": [
             {
                 "_id": 1,
@@ -19,11 +18,11 @@
                 "_id": 4,
                 "answer": "he"
             }
-        ]
+        ],
+        "answer_id": 1
     },
     {
         "question": "Hány négyzetméter egy hektár?",
-        "answer_id": 3,
         "options": [
             {
                 "_id": 1,
@@ -41,11 +40,11 @@
                 "_id": 4,
                 "answer": "100 000 m²"
             }
-        ]
+        ],
+        "answer_id": 3
     },
     {
-        "question": "Mi a talaj kialakulásának folyamatát nevezzük?",
-        "answer_id": 2,
+        "question": "Hogy nevezzük a talaj kialakulásának folyamatát?",
         "options": [
             {
                 "_id": 1,
@@ -63,11 +62,11 @@
                 "_id": 4,
                 "answer": "Összetapadás"
             }
-        ]
+        ],
+        "answer_id": 2
     },
     {
         "question": "Melyik NEM a mállás típusa?",
-        "answer_id": 4,
         "options": [
             {
                 "_id": 1,
@@ -85,11 +84,11 @@
                 "_id": 4,
                 "answer": "Hidrológiai mállás"
             }
-        ]
+        ],
+        "answer_id": 4
     },
     {
         "question": "Mi a talaj szerves kolloidja?",
-        "answer_id": 3,
         "options": [
             {
                 "_id": 1,
@@ -107,11 +106,11 @@
                 "_id": 4,
                 "answer": "Iszap"
             }
-        ]
+        ],
+        "answer_id": 3
     },
     {
         "question": "Melyik méret tartományba esik az agyag?",
-        "answer_id": 1,
         "options": [
             {
                 "_id": 1,
@@ -129,11 +128,11 @@
                 "_id": 4,
                 "answer": ">2 mm"
             }
-        ]
+        ],
+        "answer_id": 1
     },
     {
-        "question": "Melyik talajtípus kötöttségi száma 50 KA felett van?",
-        "answer_id": 4,
+        "question": "Melyik talajtípus kötöttségi száma van 50 KA felett?",
         "options": [
             {
                 "_id": 1,
@@ -151,11 +150,11 @@
                 "_id": 4,
                 "answer": "Agyagtalaj"
             }
-        ]
+        ],
+        "answer_id": 4
     },
     {
         "question": "Mi a talajművelés alapvető célja?",
-        "answer_id": 2,
         "options": [
             {
                 "_id": 1,
@@ -173,11 +172,11 @@
                 "_id": 4,
                 "answer": "A gyomok elszaporítása"
             }
-        ]
+        ],
+        "answer_id": 2
     },
     {
         "question": "Melyik NEM talajművelési alapeljárás?",
-        "answer_id": 3,
         "options": [
             {
                 "_id": 1,
@@ -195,11 +194,11 @@
                 "_id": 4,
                 "answer": "Kultivátorozás"
             }
-        ]
+        ],
+        "answer_id": 3
     },
     {
         "question": "Mekkora a középmély szántás mélysége?",
-        "answer_id": 2,
         "options": [
             {
                 "_id": 1,
@@ -217,11 +216,11 @@
                 "_id": 4,
                 "answer": "33-40 cm"
             }
-        ]
+        ],
+        "answer_id": 2
     },
     {
         "question": "Melyik talajművelő eszköz végzi elsősorban a forgatást?",
-        "answer_id": 1,
         "options": [
             {
                 "_id": 1,
@@ -239,11 +238,11 @@
                 "_id": 4,
                 "answer": "Henger"
             }
-        ]
+        ],
+        "answer_id": 1
     },
     {
         "question": "Mi a talaj higroszkóposságának jelentése?",
-        "answer_id": 4,
         "options": [
             {
                 "_id": 1,
@@ -261,11 +260,11 @@
                 "_id": 4,
                 "answer": "A talaj levegőből történő nedvességfelvétele"
             }
-        ]
+        ],
+        "answer_id": 4
     },
     {
         "question": "Melyik talajtípusra jellemző a legnagyobb kapilláris vízemelés?",
-        "answer_id": 1,
         "options": [
             {
                 "_id": 1,
@@ -283,11 +282,11 @@
                 "_id": 4,
                 "answer": "Iszapos talaj"
             }
-        ]
+        ],
+        "answer_id": 1
     },
     {
         "question": "Mi alkotja a talaj adszorpciós komplexét?",
-        "answer_id": 3,
         "options": [
             {
                 "_id": 1,
@@ -305,11 +304,11 @@
                 "_id": 4,
                 "answer": "Iszap és agyag"
             }
-        ]
+        ],
+        "answer_id": 3
     },
     {
         "question": "Melyik NEM a talajsavanyodás oka?",
-        "answer_id": 4,
         "options": [
             {
                 "_id": 1,
@@ -327,11 +326,11 @@
                 "_id": 4,
                 "answer": "Erős napsütés"
             }
-        ]
+        ],
+        "answer_id": 4
     },
     {
         "question": "Melyik növény jól tűri a savanyú talajt?",
-        "answer_id": 2,
         "options": [
             {
                 "_id": 1,
@@ -349,11 +348,11 @@
                 "_id": 4,
                 "answer": "Napraforgó"
             }
-        ]
+        ],
+        "answer_id": 2
     },
     {
         "question": "Mi a talaj szerkezetének kialakulásához szükséges?",
-        "answer_id": 1,
         "options": [
             {
                 "_id": 1,
@@ -371,11 +370,11 @@
                 "_id": 4,
                 "answer": "Magas hőmérséklet"
             }
-        ]
+        ],
+        "answer_id": 1
     },
     {
         "question": "Melyik talajtípus a legjobb vízmegkötő képességű?",
-        "answer_id": 4,
         "options": [
             {
                 "_id": 1,
@@ -393,11 +392,11 @@
                 "_id": 4,
                 "answer": "Agyagtalaj"
             }
-        ]
+        ],
+        "answer_id": 4
     },
     {
         "question": "Mi a talajérettség jele?",
-        "answer_id": 3,
         "options": [
             {
                 "_id": 1,
@@ -415,11 +414,11 @@
                 "_id": 4,
                 "answer": "Száraz, repedezett felület"
             }
-        ]
+        ],
+        "answer_id": 3
     },
     {
         "question": "Melyik művelet csökkenti a talaj vízveszteségét?",
-        "answer_id": 2,
         "options": [
             {
                 "_id": 1,
@@ -437,11 +436,11 @@
                 "_id": 4,
                 "answer": "Gyomirtás"
             }
-        ]
+        ],
+        "answer_id": 2
     },
     {
         "question": "Melyik a talajművelés időpontjának meghatározásában NEM fontos tényező?",
-        "answer_id": 4,
         "options": [
             {
                 "_id": 1,
@@ -459,11 +458,11 @@
                 "_id": 4,
                 "answer": "Napszak"
             }
-        ]
+        ],
+        "answer_id": 4
     },
     {
         "question": "Melyik talajművelési mód következik közvetlenül a betakarítás után?",
-        "answer_id": 1,
         "options": [
             {
                 "_id": 1,
@@ -481,11 +480,11 @@
                 "_id": 4,
                 "answer": "Vetés"
             }
-        ]
+        ],
+        "answer_id": 1
     },
     {
         "question": "Melyik talajművelési alapművelet felelős a talaj felszínének simításáért?",
-        "answer_id": 3,
         "options": [
             {
                 "_id": 1,
@@ -503,11 +502,11 @@
                 "_id": 4,
                 "answer": "Keverés"
             }
-        ]
+        ],
+        "answer_id": 3
     },
     {
         "question": "Mekkora lehet a tárcsás borona maximális művelési mélysége?",
-        "answer_id": 3,
         "options": [
             {
                 "_id": 1,
@@ -525,11 +524,11 @@
                 "_id": 4,
                 "answer": "20-25 cm"
             }
-        ]
+        ],
+        "answer_id": 3
     },
     {
         "question": "Melyik eszköz alkalmas a cserepesedés megszüntetésére?",
-        "answer_id": 2,
         "options": [
             {
                 "_id": 1,
@@ -547,11 +546,11 @@
                 "_id": 4,
                 "answer": "Simító"
             }
-        ]
+        ],
+        "answer_id": 2
     },
     {
         "question": "Mi a mélyművelés másik elnevezése?",
-        "answer_id": 1,
         "options": [
             {
                 "_id": 1,
@@ -569,11 +568,11 @@
                 "_id": 4,
                 "answer": "Utóművelés"
             }
-        ]
+        ],
+        "answer_id": 1
     },
     {
         "question": "Melyik évben publikálta Kreybig Lajos a növények gyökérfejlődéséről szóló tanulmányát?",
-        "answer_id": 4,
         "options": [
             {
                 "_id": 1,
@@ -591,11 +590,11 @@
                 "_id": 4,
                 "answer": "1946"
             }
-        ]
+        ],
+        "answer_id": 4
     },
     {
         "question": "Melyik növény gyökérrendszere ér el a legnagyobb mélységet?",
-        "answer_id": 2,
         "options": [
             {
                 "_id": 1,
@@ -613,11 +612,11 @@
                 "_id": 4,
                 "answer": "Zab"
             }
-        ]
+        ],
+        "answer_id": 2
     },
     {
         "question": "Mi a talajpusztulás víz által okozott formája?",
-        "answer_id": 1,
         "options": [
             {
                 "_id": 1,
@@ -635,11 +634,11 @@
                 "_id": 4,
                 "answer": "Sulymosodás"
             }
-        ]
+        ],
+        "answer_id": 1
     },
     {
         "question": "Melyik intézmény készítette a barázdás vízeróziós képet?",
-        "answer_id": 3,
         "options": [
             {
                 "_id": 1,
@@ -657,11 +656,11 @@
                 "_id": 4,
                 "answer": "AKI"
             }
-        ]
+        ],
+        "answer_id": 3
     },
     {
         "question": "Mi a talajművelés legfontosabb hatása a talaj vízháztartására?",
-        "answer_id": 4,
         "options": [
             {
                 "_id": 1,
@@ -679,11 +678,11 @@
                 "_id": 4,
                 "answer": "Csökkenti az elfolyást és párolgást"
             }
-        ]
+        ],
+        "answer_id": 4
     },
     {
         "question": "Melyik talajtulajdonság javul a kultivátorozás hatására?",
-        "answer_id": 2,
         "options": [
             {
                 "_id": 1,
@@ -701,11 +700,11 @@
                 "_id": 4,
                 "answer": "Kötöttség"
             }
-        ]
+        ],
+        "answer_id": 2
     },
     {
         "question": "Melyik művelet segít a gyomok elnyomásában?",
-        "answer_id": 1,
         "options": [
             {
                 "_id": 1,
@@ -723,11 +722,11 @@
                 "_id": 4,
                 "answer": "Műtrágyázás"
             }
-        ]
+        ],
+        "answer_id": 1
     },
     {
         "question": "Melyik talajművelési eszköz fő funkciója a tömörítés?",
-        "answer_id": 3,
         "options": [
             {
                 "_id": 1,
@@ -745,11 +744,11 @@
                 "_id": 4,
                 "answer": "Tárcsa"
             }
-        ]
+        ],
+        "answer_id": 3
     },
     {
         "question": "Melyik évben hunyt el Dr. Arany Sándor?",
-        "answer_id": 2,
         "options": [
             {
                 "_id": 1,
@@ -767,11 +766,11 @@
                 "_id": 4,
                 "answer": "2018"
             }
-        ]
+        ],
+        "answer_id": 2
     },
     {
         "question": "Melyik talajtípus kötöttségi száma 30-37 KA között van?",
-        "answer_id": 1,
         "options": [
             {
                 "_id": 1,
@@ -789,11 +788,11 @@
                 "_id": 4,
                 "answer": "Agyag"
             }
-        ]
+        ],
+        "answer_id": 1
     },
     {
         "question": "Mi a talajmorzsák kialakulásának feltétele?",
-        "answer_id": 4,
         "options": [
             {
                 "_id": 1,
@@ -811,11 +810,11 @@
                 "_id": 4,
                 "answer": "Agyag-humusz kölcsönhatás"
             }
-        ]
+        ],
+        "answer_id": 4
     },
     {
         "question": "Melyik talajtulajdonság romlik a talajsavanyodás hatására?",
-        "answer_id": 3,
         "options": [
             {
                 "_id": 1,
@@ -833,11 +832,11 @@
                 "_id": 4,
                 "answer": "Hőmérséklete"
             }
-        ]
+        ],
+        "answer_id": 3
     },
     {
         "question": "Melyik növény érzékeny a savanyú talajra?",
-        "answer_id": 1,
         "options": [
             {
                 "_id": 1,
@@ -855,11 +854,11 @@
                 "_id": 4,
                 "answer": "Burgonya"
             }
-        ]
+        ],
+        "answer_id": 1
     },
     {
         "question": "Mi a rejtett savanyúság?",
-        "answer_id": 2,
         "options": [
             {
                 "_id": 1,
@@ -877,11 +876,11 @@
                 "_id": 4,
                 "answer": "A növények gyökérzetében kialakuló savasság"
             }
-        ]
+        ],
+        "answer_id": 2
     },
     {
         "question": "Melyik mikroorganizmus csoport felelős a szerves anyagok lebontásáért?",
-        "answer_id": 4,
         "options": [
             {
                 "_id": 1,
@@ -899,11 +898,11 @@
                 "_id": 4,
                 "answer": "Lebontó mikroorganizmusok"
             }
-        ]
+        ],
+        "answer_id": 4
     },
     {
         "question": "Melyik állat NEM tartozik a talaj élőlényei közé?",
-        "answer_id": 3,
         "options": [
             {
                 "_id": 1,
@@ -921,11 +920,11 @@
                 "_id": 4,
                 "answer": "Rovarok"
             }
-        ]
+        ],
+        "answer_id": 3
     },
     {
         "question": "Milyen mélységben működnek a sorközművelő kultivátorok?",
-        "answer_id": 1,
         "options": [
             {
                 "_id": 1,
@@ -943,11 +942,11 @@
                 "_id": 4,
                 "answer": "20-25 cm"
             }
-        ]
+        ],
+        "answer_id": 1
     },
     {
         "question": "Melyik talajművelési eszköz X vagy V elrendezésű lehet?",
-        "answer_id": 2,
         "options": [
             {
                 "_id": 1,
@@ -965,11 +964,11 @@
                 "_id": 4,
                 "answer": "Henger"
             }
-        ]
+        ],
+        "answer_id": 2
     },
     {
         "question": "Mi a talajmarózás fő célja?",
-        "answer_id": 4,
         "options": [
             {
                 "_id": 1,
@@ -987,11 +986,11 @@
                 "_id": 4,
                 "answer": "Kemény talajréteg feltörése"
             }
-        ]
+        ],
+        "answer_id": 4
     },
     {
         "question": "Melyik talajművelési eljárás következik a mélyművelés után?",
-        "answer_id": 3,
         "options": [
             {
                 "_id": 1,
@@ -1009,11 +1008,11 @@
                 "_id": 4,
                 "answer": "Vetés"
             }
-        ]
+        ],
+        "answer_id": 3
     },
     {
         "question": "Melyik évben jelent meg a National Geographic 'Falánk jövőnk' cikke?",
-        "answer_id": 2,
         "options": [
             {
                 "_id": 1,
@@ -1031,11 +1030,11 @@
                 "_id": 4,
                 "answer": "2018"
             }
-        ]
+        ],
+        "answer_id": 2
     },
     {
         "question": "Melyik mértékegység NEM szerepel a régi magyar mértékegységek között?",
-        "answer_id": 4,
         "options": [
             {
                 "_id": 1,
@@ -1053,11 +1052,11 @@
                 "_id": 4,
                 "answer": "Méter"
             }
-        ]
+        ],
+        "answer_id": 4
     },
     {
         "question": "Hány négyzetöl egy kateszteri hold?",
-        "answer_id": 3,
         "options": [
             {
                 "_id": 1,
@@ -1075,11 +1074,11 @@
                 "_id": 4,
                 "answer": "3200"
             }
-        ]
+        ],
+        "answer_id": 3
     },
     {
         "question": "Mennyi egy öl méterben kifejezve?",
-        "answer_id": 1,
         "options": [
             {
                 "_id": 1,
@@ -1097,11 +1096,11 @@
                 "_id": 4,
                 "answer": "3,281 m"
             }
-        ]
+        ],
+        "answer_id": 1
     },
     {
         "question": "Melyik város NEM szerepel a hasznosítható kavicselőfordulások térképén?",
-        "answer_id": 4,
         "options": [
             {
                 "_id": 1,
@@ -1119,11 +1118,11 @@
                 "_id": 4,
                 "answer": "Pécs"
             }
-        ]
+        ],
+        "answer_id": 4
     },
     {
         "question": "Melyik év adatait tartalmazza a népességi statisztika?",
-        "answer_id": 2,
         "options": [
             {
                 "_id": 1,
@@ -1141,11 +1140,11 @@
                 "_id": 4,
                 "answer": "2015-2016"
             }
-        ]
+        ],
+        "answer_id": 2
     },
     {
         "question": "Mennyivel nőtt a világ népessége 2018-2019 között?",
-        "answer_id": 3,
         "options": [
             {
                 "_id": 1,
@@ -1163,11 +1162,11 @@
                 "_id": 4,
                 "answer": "90 millió"
             }
-        ]
+        ],
+        "answer_id": 3
     },
     {
         "question": "Melyik ország népessége csökkent 2018-2019 között?",
-        "answer_id": 1,
         "options": [
             {
                 "_id": 1,
@@ -1185,11 +1184,11 @@
                 "_id": 4,
                 "answer": "Horvátország"
             }
-        ]
+        ],
+        "answer_id": 1
     },
     {
         "question": "Mennyi volt a világ népessége 1973-ban?",
-        "answer_id": 2,
         "options": [
             {
                 "_id": 1,
@@ -1207,6 +1206,7 @@
                 "_id": 4,
                 "answer": "5,2 milliárd"
             }
-        ]
+        ],
+        "answer_id": 2
     }
 ]

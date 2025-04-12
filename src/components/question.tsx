@@ -137,11 +137,17 @@ export default function Question({ question, options, answer_id, onClose, bot1, 
             <div className="p-10 min-w-[80vw] lg:min-w-[50vw] lg:max-w-[50vw] flex flex-col gap-4 border-4 border-zinc-700 rounded-xl rounded-t-[5rem] bg-zinc-800 select-none">
                 <div className="p-3 pb-6 flex justify-center items-center relative">
                     <div className="w-full absolute -top-24 left-0 flex justify-center gap-16">
-                        <div className={"w-16 h-16 border-4 border-zinc-600 rounded-full text-3xl flex justify-center items-center " + getOpponentColor()![0]}></div>
+                        {
+                            whichBot !== 3 &&
+                            <div className={"w-16 h-16 border-4 border-zinc-600 rounded-full text-3xl flex justify-center items-center " + getOpponentColor()![0]}></div>
+                        }
                         <div className="w-24 h-24 bg-zinc-800 border-4 border-zinc-600 rounded-full text-3xl flex justify-center items-center">
                             {loading ? <Icon name="loader" size={32} className="animate-spin text-3xl"></Icon> : timer}
                         </div>
-                        <div className={"w-16 h-16 border-4 border-zinc-600 rounded-full text-3xl flex justify-center items-center " + getOpponentColor()![1]}></div>
+                        {
+                            whichBot !== 3 &&
+                            <div className={"w-16 h-16 border-4 border-zinc-600 rounded-full text-3xl flex justify-center items-center " + getOpponentColor()![1]}></div>
+                        }
                     </div>
 
                     <h1 className="text-3xl text-zinc-100 text-center">{question}</h1>
